@@ -1,40 +1,40 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  InboxIcon,
+  ColorSwatchIcon,
+  CodeIcon,
   MenuIcon,
-  QuestionMarkCircleIcon,
+  TrendingUpIcon,
   XIcon,
+  AcademicCapIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 
 const solutions = [
   {
-    name: "Inbox",
+    name: "Customer Insights",
     description:
       "Get a better understanding of where your traffic is coming from.",
     href: "#",
-    icon: InboxIcon,
+    icon: AcademicCapIcon,
   },
   {
-    name: "Messaging",
+    name: "User Design",
     description: "Speak directly to your customers in a more meaningful way.",
     href: "#",
-    icon: AnnotationIcon,
+    icon: ColorSwatchIcon,
   },
   {
-    name: "Live Chat",
+    name: "Software Developer",
     description: "Your customers' data will be safe and secure.",
     href: "#",
-    icon: ChatAlt2Icon,
+    icon: CodeIcon,
   },
   {
-    name: "Knowledge Base",
+    name: "Continuous Improvement",
     description: "Connect with third-party tools that you're already using.",
     href: "#",
-    icon: QuestionMarkCircleIcon,
+    icon: TrendingUpIcon,
   },
 ];
 
@@ -43,15 +43,15 @@ function classNames(...classes) {
 }
 
 
-export default function Landing() {
+export default function Navbar() {
   return (
       <header>
         <Popover className="relative bg-white">
           <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="/home">
+              <a href="/">
                 <span className="sr-only">Workflow</span>
-                <h1>WOLFWARE DIGITAL</h1>
+                <h1 className="text-xl">WOLFWARE DIGITAL</h1>
                 {/* <img
                   className="h-8 w-auto sm:h-10"
                   src="https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg"
@@ -60,7 +60,7 @@ export default function Landing() {
               </a>
             </div>
             <div className="-mr-2 -my-2 md:hidden">
-              <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100">
                 <span className="sr-only">Open menu</span>
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
@@ -72,7 +72,7 @@ export default function Landing() {
                     <Popover.Button
                       className={classNames(
                         open ? "text-gray-900" : "text-gray-500",
-                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2"
                       )}
                     >
                       <span>Solutions</span>
@@ -96,14 +96,14 @@ export default function Landing() {
                     >
                       <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                          <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                          <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-1">
                             {solutions.map((item) => (
                               <a
                                 key={item.name}
                                 href={item.href}
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
-                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12">
+                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-white text-blue-700 sm:h-12 sm:w-12">
                                   <item.icon
                                     className="h-6 w-6"
                                     aria-hidden="true"
@@ -165,7 +165,7 @@ export default function Landing() {
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100">
                         <span className="sr-only">Close menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
