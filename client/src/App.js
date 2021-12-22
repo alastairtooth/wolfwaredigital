@@ -1,11 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
-import Home from "./pages/home";
-// import About from "./pages/about";
+// import Home from "./pages/home";
+import Design from "./pages/solutions/design";
 
 function App() {
   return (
-    <Home />
+    <Design />
   );
 }
 
