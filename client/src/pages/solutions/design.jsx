@@ -32,11 +32,11 @@ const info = [
 
 export default function Design() {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-white">
       <Navbar />
       <div className="max-w-2xl mx-auto px-4 py-8 sm:px-6 sm:py-16 lg:max-w-7xl lg:px-8">
         <section aria-labelledby="details-heading">
-          <div className="flex flex-col items-left text-left">
+          <div className="max-w-2xl flex flex-col items-center text-center">
             <h2
               id="details-heading"
               className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
@@ -44,25 +44,29 @@ export default function Design() {
               Design
             </h2>
             <p className="mt-3 max-w-7xl text-lg text-gray-600">
-              A great design differentiates you from your competitors.  It invokes emotion in your customer and brings them on your desired journey - it influences perceived value, accepted price, & sales volumes.
+              A great design differentiates you from your competitors. It
+              invokes emotion in your customer and brings them on your desired
+              journey - it influences perceived value, accepted price, & sales
+              volumes.
             </p>
           </div>
 
           <div className="mt-8 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
-            { info.map((data) => (
-                <div>
-                  <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
-                    <img
-                      src={data.ImageURL}
-                      alt="Drawstring top with elastic loop closure and textured interior padding."
-                      className="w-full h-96 object-center object-cover"
-                    />
-                  </div>
-                  <p className="mt-8 text-lg text-black font-medium">{data.title}</p>
-                  <p className="mt-3 text-base text-gray-500">{data.text}</p>
+            {info.map((data) => (
+              <div>
+                <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
+                  <img
+                    src={data.ImageURL}
+                    alt="Drawstring top with elastic loop closure and textured interior padding."
+                    className="w-full h-96 object-center object-cover"
+                  />
                 </div>
-            )
-          )}
+                <p className="mt-8 text-lg text-black font-medium">
+                  {data.title}
+                </p>
+                <p className="mt-3 text-base text-gray-500">{data.text}</p>
+              </div>
+            ))}
           </div>
         </section>
       </div>

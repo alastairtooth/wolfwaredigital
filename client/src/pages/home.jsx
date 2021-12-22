@@ -18,7 +18,7 @@ export default function Home() {
         <div className="relative py-32 overflow-hidden">
           <div
             aria-hidden="true"
-            className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"
+            className="absolute inset-x-0 top-0 h-48"
           />
           <FeatureLeft
             title={offerings[0].title}

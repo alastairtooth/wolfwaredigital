@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <div className="relative">
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+    <div className="relative mt-8">
+      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-white" />
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
           <div className="absolute inset-0">
