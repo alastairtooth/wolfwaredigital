@@ -11,20 +11,20 @@ const info = [
       "https://images.unsplash.com/photo-1632062549850-44a0a6eede16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
   },
   {
-    title: "Interface Design (UI)",
-    text: "",
+    title: "Experience Design (UX)",
+    text: "A mark of a well designed UX is when it guides customers through your products experience with the most minimal friction as possible.  Well designed UX will pull customers through your checkout faster, reduct application drop out rates, and improve your overall customer experience.  If your UX is poor then it'll be the first thing customers speak about, and if it's good it'll be so seamless customers won't even notice.",
     ImageURL:
       "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2942&q=80",
   },
   {
-    title: "Experience Design (UX)",
-    text: "UX is the end-to-end experience your customers will experience.  It'll dictate lost or completed sales, repeat business, and referred customers.",
+    title: "Interface Design (UI)",
+    text: "User Interface design is the application of design and branding choices over the agreed UX. Well designed UI's will not only be visually pleasing, but will guide users on the desired path of your product.",
     ImageURL:
       "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
   },
   {
     title: "Customer Testing",
-    text: "",
+    text: "A brilliant design isn't defined by how much the designers love it, or the business.  Design brilliance is defined by how much your customers love it.  Performing A/B testing, walkthroughs, and testing desired paths will ensure the way users interact with your product is as intended.",
     ImageURL:
       "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
   },
@@ -36,7 +36,7 @@ export default function Design() {
       <Navbar />
       <div className="max-w-2xl mx-auto px-4 py-8 sm:px-6 sm:py-16 lg:max-w-7xl lg:px-8">
         <section aria-labelledby="details-heading">
-          <div className="max-w-2xl flex flex-col items-center text-center">
+          <div className="flex flex-col items-left text-left">
             <h2
               id="details-heading"
               className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
