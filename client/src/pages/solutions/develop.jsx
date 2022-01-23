@@ -127,7 +127,7 @@ export default function Develop() {
       <Navbar />
       <div className="max-w-7xl mx-auto mt-16 mb-32 px-4 sm:px-6 lg:px-8">
         <div className=" mx-auto text-left">
-          <h2 className="text-4xl font-extrabold text-gray-900">Development</h2>
+          <h2 className="text-4xl font-extrabold text-blue-700">Development</h2>
           <p className="my-4 text-lg text-gray-500">
             At Wolfware Digital we specialise in the development of multiple
             forms of digital application and web development. Below are just

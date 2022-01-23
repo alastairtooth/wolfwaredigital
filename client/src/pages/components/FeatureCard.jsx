@@ -3,7 +3,7 @@ const { blogPosts }  = require("../data/features");
 
 export default function FeatureCard() {
   return (
-    <div className="relative bg-white md:pt-16">
+    <div className="relative bg-white pt-16">
       <div className="text-left mx-auto max-w-md px-4 pb-8 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
           Read

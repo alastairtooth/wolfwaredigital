@@ -3,7 +3,7 @@ import { CodeIcon } from "@heroicons/react/outline";
 export default function FeatureRight() {
   return (
     <div>
-      <div className="lg:mx-auto lg:max-w-7xl md:py-32 lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+      <div className="lg:mx-auto lg:max-w-7xl sm:py-10 md:py-16 lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
         <div className="flex flex-col justify-center px-4 max-w-xl mx-auto sm:px-6 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
           <div>
             <span className="h-12 w-12 rounded-md flex items-center justify-center bg-white border-2 border-blue-700">

@@ -8,35 +8,29 @@ const people = [
       "https://res.cloudinary.com/wolfware-digital/image/upload/v1639966869/wolfware-digital/20211203_LeWagon_0092_pivkor.jpg",
     bio: " \
     <p> \
-      Wolfware Digital is lead by Alastair Tooth. Alastair is a Certified Scrum Product Owner, and a 6-Sigma Black Belt,\
-      and has over a decade of experience working in large scale enterprise. \
-      He is an experienced developer and Project Manager, and has delivered multi-million \
-      dollar budgeted programs of work focusing on targets such as: \
+      Wolfware Digital is lead by Alastair Tooth. Alastair is a Software Developer, Certified Scrum Product Owner, and a 6-Sigma Black Belt.  He has\
+       over a decade of experience working in both tech start-ups and corporate environments. \
+      He is an experienced Project Manager, and has delivered multi-million \
+      dollar programs of work focusing on targets such as: \
     </p> \
     <ul> \
       <li>- Revenue Generation</li> \
       <li>- Customer Onboarding</li> \
-      <li>- Digital Adoption</li> \
       <li>- Cost Reduction</li> \
       <li>- Process Simplification</li> \
       <li>- Regulatory/Risk Compliance</li> \
     </ul> \
-    <p> \
-      Alastair’s in depth knowledge of designing end-to-end customer experiences puts Wolfware’s clients in unique hands. \
-      The team will design not just to help onboard customers, but also to keep them advocates, and in a way that supports \
-      businesses bottom-lines. \
-    </p> \
     ",
     linkedinUrl: "https://www.linkedin.com/in/alastairtooth/",
   },
-  {
-    name: "Jarrod Joske",
-    role: "Director - Continuous Improvement",
-    imageUrl:
-      "https://res.cloudinary.com/wolfware-digital/image/upload/v1639982629/wolfware-digital/Jarrod_Joske_gqfjbe.jpg",
-    bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
-    linkedinUrl: "https://www.linkedin.com/in/jarrod-joske-8796a482/",
-  },
+  // {
+  //   name: "Jarrod Joske",
+  //   role: "Director - Continuous Improvement",
+  //   imageUrl:
+  //     "https://res.cloudinary.com/wolfware-digital/image/upload/v1639982629/wolfware-digital/Jarrod_Joske_gqfjbe.jpg",
+  //   bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
+  //   linkedinUrl: "https://www.linkedin.com/in/jarrod-joske-8796a482/",
+  // },
 ];
 
 export default function Example() {
@@ -50,9 +44,7 @@ export default function Example() {
               About Us
             </h2>
             <p className="text-xl text-gray-500">
-              Nulla quam felis, enim faucibus proin velit, ornare id pretium.
-              Augue ultrices sed arcu condimentum vestibulum suspendisse.
-              Volutpat eu faucibus vivamus eget bibendum cras.
+              Based primarily in Melbourne, the Wolfware team have worked at the forefront of the Australian tech landscape.
             </p>
           </div>
           <div className="lg:col-span-2">

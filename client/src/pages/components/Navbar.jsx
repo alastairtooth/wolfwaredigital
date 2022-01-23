@@ -14,29 +14,28 @@ const solutions = [
   {
     id: 1,
     name: "Customer Insights",
-    description:
-      "Get a better understanding of where your traffic is coming from.",
+    description: "Connect to your customers in a more meaningful way.",
     href: "research",
     icon: AcademicCapIcon,
   },
   {
     id: 2,
     name: "User Design",
-    description: "Speak directly to your customers in a more meaningful way.",
+    description: "Design an experience your customers love",
     href: "design",
     icon: ColorSwatchIcon,
   },
   {
     id: 3,
-    name: "Software Developer",
-    description: "Your customers' data will be safe and secure.",
+    name: "Software Development",
+    description: "Build the Digital Product of your dreams",
     href: "development",
     icon: CodeIcon,
   },
   {
     id: 4,
     name: "Continuous Improvement",
-    description: "Connect with third-party tools that you're already using.",
+    description: "Let us help you constantly improve your Product or Business.",
     href: "improvement",
     icon: TrendingUpIcon,
   },
@@ -136,12 +135,12 @@ export default function Navbar() {
             >
               Media
             </a>
-            <a
+            {/* <a
               href="/about"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               About
-            </a>
+            </a> */}
           </Popover.Group>
         </div>
 
@@ -176,7 +175,7 @@ export default function Navbar() {
                     </Popover.Button>
                   </div>
                 </div>
-                <div className="mt-6">
+                <div className="mt-6"> development
                   <nav className="grid grid-cols-1 gap-7">
                     {solutions.map((item) => (
                       <a
@@ -203,12 +202,12 @@ export default function Navbar() {
                   >
                     Media
                   </a>
-                  <a
+                  {/* <a
                     href="/about"
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
                     About
-                  </a>
+                  </a> */}
                   <a
                     href="/contact"
                     className="text-base font-medium text-gray-900 hover:text-gray-700"

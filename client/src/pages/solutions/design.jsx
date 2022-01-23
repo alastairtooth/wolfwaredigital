@@ -39,11 +39,11 @@ export default function Design() {
           <div className="flex flex-col items-left text-left">
             <h2
               id="details-heading"
-              className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+              className="text-3xl font-extrabold tracking-tight text-blue-600 sm:text-4xl"
             >
               Design
             </h2>
-            <p className="mt-3 max-w-7xl text-lg text-gray-600">
+            <p className="mt-3 max-w-7xl text-lg text-gray-700">
               A great design differentiates you from your competitors. It
               invokes emotion in your customer and brings them on your desired
               journey - it influences perceived value, accepted price, & sales

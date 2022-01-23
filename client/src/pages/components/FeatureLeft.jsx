@@ -34,10 +34,9 @@ export default function FeatureLeft(props) {
             </div>
           </div>
         </div>
-        <div className="mt-12 sm:mt-16 lg:mt-0">
+        <div style={{ height: "560px" }} className="mt-12 sm:mt-16 lg:mt-0">
           <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
             <img
-              style={{ height: "560px" }}
               className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
               src={props.imageURL}
               alt="Inbox user interface"

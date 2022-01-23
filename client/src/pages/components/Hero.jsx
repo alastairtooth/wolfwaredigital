@@ -31,9 +31,9 @@ export default function Hero() {
               <div className="space-y-4 sm:space-y-0 sm:mx-auto">
                 <button
                   onClick={() => setLgShow(true)}
-                  className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-800 bg-white hover:bg-cyan-600 sm:px-8"
+                  className="flex items-center w-full justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-800 bg-white hover:bg-blue-50 sm:px-8"
                 >
-                  Get in Contact
+                  Contact Us
                 </button>
               </div>
               <Modal
@@ -43,7 +43,7 @@ export default function Hero() {
                 onHide={() => setLgShow(false)}
                 aria-labelledby="example-modal-sizes-title-lg"
               >
-              <ModalForm />
+                <ModalForm />
               </Modal>
             </div>
           </div>
