@@ -39,7 +39,7 @@ export default function Design() {
           <div className="flex flex-col items-left text-left">
             <h2
               id="details-heading"
-              className="text-3xl font-extrabold tracking-tight text-blue-600 sm:text-4xl"
+              className="text-3xl font-extrabold tracking-tight text-blue-700 sm:text-4xl"
             >
               Design
             </h2>

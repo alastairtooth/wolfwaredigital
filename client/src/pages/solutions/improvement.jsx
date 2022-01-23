@@ -66,7 +66,9 @@ export default function Improvement() {
                   <li>Iterative feature development</li>
                   <li>Delivery of the most valuable innovations first</li>
                   <li>Use of Scrum to efficiently deliver projects</li>
-                  <li>Grooming and management of the Product feature backlog</li>
+                  <li>
+                    Grooming and management of the Product feature backlog
+                  </li>
                 </ul>
               </div>
             </div>
