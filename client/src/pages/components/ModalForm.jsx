@@ -1,4 +1,34 @@
+import React, { useState } from "react";
+
 export default function ModalForm() {
+
+  const [contact, setContact] = useState({
+    First_Name: "",
+    Last_Name: "",
+  });
+
+    function handleChange(event) {
+      const { name, value } = event.target;
+
+      console.log(contact)
+
+      setContact((prevValue) => {
+        if (name === "First_Name") {
+          return {
+            First_Name: value,
+            Last_Name: prevValue.Last_Name,
+          };
+        } else if (name === "Last_Name") {
+          return {
+            First_Name: prevValue.First_Name,
+            Last_Name: value,
+          };
+        }
+      });
+      console.log(contact)
+    }
+
+
   return (
     <div className="bg-gray-100">
       <div className="max-w-7xl mx-auto">
@@ -124,22 +154,42 @@ export default function ModalForm() {
                 Send us a message
               </h3>
               <form
-                action="/confirmation"
+                action="https://formsubmit.co/first@wwdigital.anonaddy.com"
                 method="POST"
                 className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
               >
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="_honey" style={{ display: "none" }} />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://www.wolfwaredigital.com/confirmation"
+                />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value={
+                    "New contact request from: " +
+                    contact.First_Name +
+                    " " +
+                    contact.Last_Name
+                  }
+                />
+
                 <div>
                   <label
-                    htmlFor="fName"
+                    htmlFor="First_Name"
                     className="block text-sm font-medium text-gray-900"
                   >
-                    First name
+                    First Name
                   </label>
                   <div className="mt-1">
                     <input
+                      onChange={handleChange}
                       type="text"
-                      name="fName"
-                      id="fName"
+                      name="First_Name"
+                      id="First_Name"
                       autoComplete="given-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                       required
@@ -148,16 +198,17 @@ export default function ModalForm() {
                 </div>
                 <div>
                   <label
-                    htmlFor="lName"
+                    htmlFor="Last_Name"
                     className="block text-sm font-medium text-gray-900"
                   >
-                    Last name
+                    Last Name
                   </label>
                   <div className="mt-1">
                     <input
+                      onChange={handleChange}
                       type="text"
-                      name="lName"
-                      id="lName"
+                      name="Last_Name"
+                      id="Last_Name"
                       autoComplete="family-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                       required
@@ -167,7 +218,7 @@ export default function ModalForm() {
                 <div className="sm:col-span-2">
                   <div className="flex justify-between">
                     <label
-                      htmlFor="company"
+                      htmlFor="Company"
                       className="block text-sm font-medium text-gray-900"
                     >
                       Company
@@ -179,23 +230,24 @@ export default function ModalForm() {
                   <div className="mt-1">
                     <input
                       type="text"
-                      name="company"
-                      id="company"
+                      name="Company"
+                      id="Company"
+                      autoComplete="organization"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
                 <div>
                   <label
-                    htmlFor="email"
+                    htmlFor="Email"
                     className="block text-sm font-medium text-gray-900"
                   >
                     Email
                   </label>
                   <div className="mt-1">
                     <input
-                      id="email"
-                      name="email"
+                      id="Email"
+                      name="Email"
                       type="email"
                       autoComplete="email"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
@@ -206,7 +258,7 @@ export default function ModalForm() {
                 <div>
                   <div className="flex justify-between">
                     <label
-                      htmlFor="phone"
+                      htmlFor="Phone"
                       className="block text-sm font-medium text-gray-900"
                     >
                       Phone
@@ -218,8 +270,8 @@ export default function ModalForm() {
                   <div className="mt-1">
                     <input
                       type="text"
-                      name="phone"
-                      id="phone"
+                      name="Phone"
+                      id="Phone"
                       autoComplete="tel"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                       aria-describedby="phone-optional"
@@ -229,7 +281,7 @@ export default function ModalForm() {
                 <div className="sm:col-span-2">
                   <div className="flex justify-between">
                     <label
-                      htmlFor="contents"
+                      htmlFor="Contents"
                       className="block text-sm font-medium text-gray-900"
                     >
                       How can we help?
@@ -240,8 +292,8 @@ export default function ModalForm() {
                   </div>
                   <div className="mt-1">
                     <textarea
-                      id="contents"
-                      name="contents"
+                      id="Contents"
+                      name="Contents"
                       rows={4}
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
                       aria-describedby="contents-max"
