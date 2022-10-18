@@ -180,7 +180,7 @@ const blogPosts = [
     author: {
       name: "Alastair Tooth",
       imageUrl:
-        "https://res.cloudinary.com/wolfware-digital/image/upload/v1639966869/wolfware-digital/20211203_LeWagon_0092_pivkor.jpg",
+        "https://res.cloudinary.com/wolfware-digital/image/upload/f_auto/v1639966869/wolfware-digital/20211203_LeWagon_0092_pivkor.jpg",
       href: "https://medium.com/@alastairtooth/keeping-your-customer-in-your-design-c69a78919587",
     },
     readingLength: "12 min",
@@ -202,7 +202,7 @@ const blogPosts = [
     author: {
       name: "Alastair Tooth",
       imageUrl:
-        "https://res.cloudinary.com/wolfware-digital/image/upload/v1639966869/wolfware-digital/20211203_LeWagon_0092_pivkor.jpg",
+        "https://res.cloudinary.com/wolfware-digital/image/upload/f_auto/v1639966869/wolfware-digital/20211203_LeWagon_0092_pivkor.jpg",
       href: "https://medium.com/@alastairtooth/product-development-and-managing-scope-79e27ccfffa2",
     },
     readingLength: "9 min",
@@ -224,7 +224,7 @@ const blogPosts = [
     author: {
       name: "Alastair Tooth",
       imageUrl:
-        "https://res.cloudinary.com/wolfware-digital/image/upload/v1639966869/wolfware-digital/20211203_LeWagon_0092_pivkor.jpg",
+        "https://res.cloudinary.com/wolfware-digital/image/upload/f_auto/v1639966869/wolfware-digital/20211203_LeWagon_0092_pivkor.jpg",
       href: "https://medium.com/@alastairtooth/product-owners-start-up-development-398e1019b2d1",
     },
     readingLength: "4 min",
@@ -239,7 +239,7 @@ const offerings = [
     preview:
       "<p className='my-4 text-lg text-gray-500'>All good products started with a great design. Using a measure twice, cut once philosophy at Wolfware we focus strongly on ensuring clients ideas are well designed and tested before they move to market. <br><br><strong className='my-4 text-lg text-gray-800'>Examples of our services:</strong></p><br><ul><li>- Market Segmentation Analysis</li><li>- Ideation Workshops</li><li>- Wireframing and UX Testing</li><li>- Hi-Fi prototyping</li></ul>",
     imageURL:
-      "https://res.cloudinary.com/wolfware-digital/image/upload/v1639877931/wolfware-digital/Slice2_ljiahz.png",
+      "https://res.cloudinary.com/wolfware-digital/image/upload/f_auto/v1639877931/wolfware-digital/Slice2_ljiahz.png",
   },
   {
     id: 1,
